@@ -165,6 +165,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="lMY-nr-UFx" id="IVV-rp-1Fa"/>
+                        <outlet property="currentTempLabel" destination="Dff-gR-OcO" id="HGh-OU-pEb"/>
+                        <outlet property="currentWeatherImage" destination="V8O-1X-RNw" id="iVu-5s-WmI"/>
+                        <outlet property="currentWeatherTypeLabel" destination="clm-zT-6gg" id="nmK-ga-3OO"/>
+                        <outlet property="dateLabel" destination="RHZ-F4-6Ei" id="vvN-I6-m4L"/>
+                        <outlet property="tableView" destination="4Yv-jO-t9a" id="nlr-x5-6xW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
