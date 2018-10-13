@@ -100,14 +100,14 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="90" id="a0o-tK-rSR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="90" id="a0o-tK-rSR" customClass="WeatherCell" customModule="RainyShine" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a0o-tK-rSR" id="CuY-zf-JJl">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PzY-ZO-Z67">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PzY-ZO-Z67">
                                                     <rect key="frame" x="16" y="18" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="dTC-Bo-lej"/>
@@ -154,6 +154,7 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.86896728300000003" green="0.86896728300000003" blue="0.86896728300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="ky3-UC-vz0" firstAttribute="leading" secondItem="PzY-ZO-Z67" secondAttribute="trailing" constant="8" id="Dxx-jS-5fL"/>
                                                 <constraint firstItem="PzY-ZO-Z67" firstAttribute="leading" secondItem="CuY-zf-JJl" secondAttribute="leadingMargin" constant="8" id="EWb-a6-Fet"/>
@@ -166,6 +167,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="cXn-60-HTG" id="eAE-I3-Usv"/>
+                                            <outlet property="highTemp" destination="AHY-V9-A8H" id="j6Q-FX-XnL"/>
+                                            <outlet property="lowTemp" destination="fAf-Jc-wuZ" id="O5d-8A-nZV"/>
+                                            <outlet property="weatherIcon" destination="PzY-ZO-Z67" id="NpV-qy-YBS"/>
+                                            <outlet property="weatherType" destination="vEx-A1-Jvl" id="Alm-mc-U2b"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

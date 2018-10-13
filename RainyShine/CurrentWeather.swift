@@ -52,6 +52,7 @@ class CurrentWeather {
     
     func downloadWeatherDetails(completed: @escaping DownloadComplete) {
         //Alamofire download
+        print(CURRENT_WEATHER_URL)
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
         
         Alamofire.request(currentWeatherURL).validate().responseJSON { response in
